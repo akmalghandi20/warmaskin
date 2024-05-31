@@ -4,10 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WARMASKIN</title>
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-	<link rel="stylesheet" href="assets/css/project1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Overpass:ital,wght@0,100..900;1,100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <style>
-         h1{
+        body{
+            margin: 0;
+        }
+        header{
+            background-color: gray;
+            
+            width: 100%;
+            max-height: 13vh;
+            display: flex;
+
+        }
+        .logo{
+            width: 50%;
+            padding: 2vh;
+
+        }
+        .logo img{
+            margin-left: 6vh;
+           width: auto;
+           height: 100%;
+        }
+        nav{
+            width: 50%;
+            font-size: 2.5vh;
+            margin-right: 5vh;
+            justify-content: end;
+            align-items: center;
+            display: flex;
+        }
+        nav > a{
+            color: black;
+            text-decoration: none;
+            margin: 1vh;
+            font-family: "prompt";
+            border-radius: 50px;
+            padding: 0.5vh 2vh;
+        }
+        nav > a:hover{
+            transition: 0.30s;
+            background-color: black;
+            color: white;
+
+        }
+        h1{
+            font-family: "prompt";
             font-size: 4vh;
             display: flex;
             align-items: center;
@@ -15,7 +58,9 @@
             margin-bottom: 7vh;
         }
         h3{
+            font-family: "prompt";
             font-size: 3vh;
+            margin: 0;
         }
         img{
             height: 20vh;
@@ -25,11 +70,16 @@
             margin: 0;
         }
         p{
+            font-family: "overpass";
+            color: gray;
             margin: 0;
             text-align: justify;
         }
         .harga{
+            font-size: 2vh;
+            font-family: "freeman";
             color: red;
+            margin-bottom: 1vh;
         }
         .coffe{
             display: block;
@@ -64,37 +114,21 @@
    
 </head>
 <body>
-    <nav class="navbar nav-first navbar-dark bg-dark">
-        <div class="container"> 
-            <a class="navbar-brand" href="#">
-                <img src="assets/imgs/LOGO1.png" alt="WARMASKIN" style="height: auto;">
-            </a>
-            <ul class="navbar-nav ml-auto">                  
-            </ul>
-            <input class="" type="text" id="searchInput" placeholder="Cari Menu...">
-            <button id="searchButton">Cari</button>
+    
+    <header>
+        <div class="logo">
+            <img src="assets/imgs/LOGO1.png" alt="WARMASKIN">
         </div>
-    </nav>
-    <nav class="nav-second navbar custom-navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto"> 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Our Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Location</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <nav>
+            <a href="">Home</a>
+            <a href="menuwarmaskin.html">Menu</a>
+            <a href="">Location</a>
+            <a href="">Massage</a>
+            
+        </nav>
+        
+    </header>
+
     <!-- Membuat Menu -->
     <section>
         <div class="coffe">
