@@ -8,19 +8,26 @@
     <style>
         body{
             margin: 0;
+            background-color: beige;
         }
         header{
-            background-color: gray;
-            
+            background-color: 0.0.0.0 gray;
+            top: 0;
+            position: fixed;
             width: 100%;
             max-height: 13vh;
             display: flex;
-
+            transition: 0.3s;
+        }
+        header.sticky{
+            background-color: gray;
+            max-height: 10vh;
         }
         .logo{
             width: 50%;
             padding: 2vh;
-
+            transition: 0.6s;
+            position: relative;
         }
         .logo img{
             margin-left: 6vh;
@@ -34,6 +41,8 @@
             justify-content: end;
             align-items: center;
             display: flex;
+            transition: 0.6s;
+            position: relative;
         }
         nav > a{
             color: black;
@@ -48,6 +57,10 @@
             background-color: black;
             color: white;
 
+        }
+        .menu{
+            position: relative
+            margin-top: ;
         }
         h1{
             font-family: "prompt";
@@ -130,7 +143,7 @@
     </header>
 
     <!-- Membuat Menu -->
-    <section>
+    <section class="menu">
         <div class="coffe">
             <h1>COFFE Originale</h1>
             
@@ -317,6 +330,12 @@
             
         </div>
     </section>
+    <script type="">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
     
 </body>
 </html>
